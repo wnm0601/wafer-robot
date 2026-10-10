@@ -1,0 +1,7 @@
+mission:
+  provisional_target_count: 5
+  departure_countdown_sec: 5.0
+  human_clear_resume_sec: 4.0
+  return_countdown_sec: 10.0
+  manual_line_search_hint_sec: 3.0
+

@@ -1,0 +1,13 @@
+<!doctype html><html lang="ko"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>대차 3D 펌웨어 시뮬레이션</title><link rel="stylesheet" href="/sim.css">
+<header><div><small>WAFER CART / SIMULATION ONLY</small><h1>대차 3D 주행 시험</h1></div><span class="badge">실제 출력 없음</span></header>
+<main><section class="scene"><div class="bar"><strong>SolidWorks 대차 · 부스 배치</strong><select id="view" aria-label="시점"><option value="perspective">사선 보기</option><option value="top">위에서 보기</option><option value="follow">대차 따라가기</option></select><button id="reload">CAD 새로 읽기</button></div>
+<div class="viewport"><canvas id="scene" tabindex="0" aria-label="회전 확대 가능한 3D 대차 시뮬레이션"></canvas><span id="label-table" class="label"></span><span id="label-wall" class="label"></span><span id="label-home" class="label"></span><span id="label-destination" class="label"></span></div>
+<p id="booth-status">CAD 형상을 불러오는 중입니다.</p><p class="muted">드래그: 시점 회전 · 휠/두 손가락: 확대 · 선택 모드에서 바닥 클릭: 지점 지정</p>
+<div class="bar"><button data-point="home">출발지 설정</button><button data-point="destination">목적지 설정</button><button id="reset">위치 초기화</button><label><input id="slam-overlay" type="checkbox" checked>가상 SLAM 지도·LiDAR</label></div><p id="ros-status" class="muted">ROS2 데이터 대기 · 실제 장치 미연결</p></section>
+<aside><h2>수동 조작</h2><p>PC에서 실제 C++ 제어 소스를 실행합니다. 속도·엔코더·부스 치수는 가상 모델입니다.</p>
+<label>모드<select id="mode"><option value="vector">4륜 주행</option><option value="single">한 모터씩</option></select></label><label>모터<select id="motor"><option value="1">M1 / 가상 FL</option><option value="2">M2 / 가상 FR</option><option value="3">M3 / 가상 RL</option><option value="4">M4 / 가상 RR</option></select></label>
+<label>명령 % · 정지 중 변경<input id="speed" type="number" min="1" max="30" value="10"></label><input id="slider" aria-label="명령 슬라이더" type="range" min="1" max="30" value="10"><button id="apply">설정 적용</button>
+<div class="pad"><button data-key="q">↶ Q</button><button data-key="w">↑ W</button><button data-key="e">↷ E</button><button data-key="a">← A</button><button data-key="s">↓ S</button><button data-key="d">D →</button><button data-key="up">M ↑</button><button data-key="down">M ↓</button></div>
+<button id="prepare" class="primary">수동 준비</button><button id="stop">정지 · Space</button><button id="estop" class="danger">비상정지 모의 · X</button><p class="muted">누르는 동안 이동 · 해제/창 전환/통신 중단: 정지 · 다시 움직이려면 수동 준비</p></aside></main>
+<footer><strong id="status">서버 연결 중</strong><div id="pose">좌표 대기</div><div id="wheels">가상 엔코더 대기</div><small>기구학 모델 / 실제 토크·마찰·하중·제동거리 예측 불가 · ROS2/Nav2는 별도 실행·활성화한 가상 시험만 지원</small></footer>
+<script src="/booth_geometry.js"></script><script src="/booth_3d.js"></script><script src="/sim.js"></script></html>

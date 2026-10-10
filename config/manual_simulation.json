@@ -1,0 +1,10 @@
+{
+  "simulation_only": true,
+  "calibration_verified": false,
+  "max_wheel_speed_m_s": 1.0,
+  "wheel_radius_m": 0.05,
+  "rotation_lever_m": 0.45,
+  "counts_per_wheel_rev": 1000,
+  "motor_order": ["FL", "FR", "RL", "RR"],
+  "note": "모두 가상 플랜트 설정값이며 실측 속도·바퀴지름·encoder 교정값이 아닙니다. firmware의 SIMULATION X-roller 순서를 사용합니다. 질량·토크·타이어 미끄러짐은 재현하지 않습니다."
+}

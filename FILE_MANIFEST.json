@@ -1,0 +1,533 @@
+{
+  "created_kst_date": "2026-10-10",
+  "source_commit": "87208daff82ccc94b60eeaae2fba0792a2ba6448",
+  "purpose": "Windows manual drive and diagnosis transfer; no automatic upload or motion",
+  "manifest_excludes_itself": true,
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "bytes": 1612,
+      "sha256": "42E1A368EC816C4C1F31427BB4043FA015D19B9E4B868E3D2952A68C89FAF99D"
+    },
+    {
+      "path": "README_FIRST.md",
+      "bytes": 11952,
+      "sha256": "386632F7275CCC0C8F475F8B0332E8A2BD23D30F177A4AD32FD9475627DE4AB0"
+    },
+    {
+      "path": "requirements-manual.txt",
+      "bytes": 14,
+      "sha256": "0B81718D1CBE8A7696E45A9388C9205272B5E345CD79D0CF1CCFB7A9FD1925E9"
+    },
+    {
+      "path": "START.cmd",
+      "bytes": 103,
+      "sha256": "E535139B16A3C2FD16099398D7555E7B5F8944F35263D1D47019D76D9FE4ECC7"
+    },
+    {
+      "path": "START.ps1",
+      "bytes": 4539,
+      "sha256": "5C4172B715D45D305B9D87C8335DFEC98E553D7A8019EB750A3BD454D8055B8C"
+    },
+    {
+      "path": "config/bench_hardware_pending.json",
+      "bytes": 1235,
+      "sha256": "8C26CD4413C2EC1AE975A5A32358FCFD4B00D56860FE16453023FF95C10F04D5"
+    },
+    {
+      "path": "config/manual_simulation.json",
+      "bytes": 467,
+      "sha256": "755CCB9C3722871FD76CE4A19487812D5D745D44D7FB14E93F28FA7D60A0A208"
+    },
+    {
+      "path": "docs/12_MEASUREMENT_CHECKLIST.md",
+      "bytes": 9009,
+      "sha256": "96B9440FEBD4E7C58D05AF47FB9EA54363407A1E6C8B5A2505FD369414025AF0"
+    },
+    {
+      "path": "docs/18_HKX_PCB_A_REVIEW.md",
+      "bytes": 33909,
+      "sha256": "EE2F139904A421BB61EF2E8396BAE0D18267C9B2DF266AC36C946F32FA49AAF0"
+    },
+    {
+      "path": "docs/20_PCB_FIRMWARE_BENCH_PREPARATION.md",
+      "bytes": 13210,
+      "sha256": "F0FB7E4C80534BD4CB64F6EFCBD20BBB7703EC701CC87CE40CF328A2D1B34FE6"
+    },
+    {
+      "path": "docs/21_POWER_WIRING_CONFIRMATION_CHECKLIST.md",
+      "bytes": 4131,
+      "sha256": "EC5C092E5A2EE65929E6AECF9E115428182F55716C716C7A9714F9413FDD1206"
+    },
+    {
+      "path": "docs/22_MANUAL_FIRST_DRIVE_PREPARATION.md",
+      "bytes": 4569,
+      "sha256": "8ADD4900F21B1887FC9AFB340E90CB4F5400AADCE7DF8A23BD9E93BC38C5EF26"
+    },
+    {
+      "path": "docs/23_FIRMWARE_MAP_SIMULATOR.md",
+      "bytes": 6002,
+      "sha256": "1465432B535619FD5317E0CDA1B04C8AC858023BCE76AFC07925E530A74992B1"
+    },
+    {
+      "path": "docs/24_MANUAL_SCREEN_COMMISSIONING.md",
+      "bytes": 5610,
+      "sha256": "A8151C0BB3CD7D6290B06DDA2A6BD6B7A670E7FD2783CF4875A667BF54AFA074"
+    },
+    {
+      "path": "docs/25_MANUAL_OUTPUT_CONNECTION.md",
+      "bytes": 26044,
+      "sha256": "0C2F9DFE1C9FADE6146D19680C35D7523CB453015FDC21B46C14326A4A5A1842"
+    },
+    {
+      "path": "docs/HKX_PCB_A_original.pdf",
+      "bytes": 374963,
+      "sha256": "B521FD67C6967C2CDD8FBA5449BB1D2D63C720D4656180CF1F029A6D33DB1F0E"
+    },
+    {
+      "path": "docs/preuse_checklist_original.pdf",
+      "bytes": 308394,
+      "sha256": "F5C61A6D64479196A53EC25431EED0D8E7EE4BEE341C17D90A86A7B4E202D2F2"
+    },
+    {
+      "path": "docs/hardware/hkx_pcb_a_reference.json",
+      "bytes": 19334,
+      "sha256": "B114640BD2A3687B229DBD4988196D72B0760BABCD1DB19B6524B155A691905D"
+    },
+    {
+      "path": "evidence/diagnostic_commands_poweroff_20261009.log",
+      "bytes": 22891,
+      "sha256": "23E338C2B1F88745317B1F293651F055D42192B0CAD3EDC85902298151A97EAD"
+    },
+    {
+      "path": "evidence/diagnostic_idle_20261009.log",
+      "bytes": 44914,
+      "sha256": "0CA1EAF0D2B070A0C939C508F0184FD37F40B9DB30B0B84500D7B816BD7AD379"
+    },
+    {
+      "path": "evidence/manual_terminal_20261009_141846.jsonl",
+      "bytes": 15425,
+      "sha256": "641EB7B9804F1D736E20ED248D9B99FEC8F3775ED1E3D7D605914113D6963A76"
+    },
+    {
+      "path": "firmware/encoder_pin_probe/platformio.ini",
+      "bytes": 241,
+      "sha256": "265A063C23DFDF14072369D2C8A82F92E4D3875A8A98C617525AF3FB992783D0"
+    },
+    {
+      "path": "firmware/encoder_pin_probe/README.txt",
+      "bytes": 34976,
+      "sha256": "9AF833F38D0F235863FF2C8FEAD3413C2F260E64E08488694843F81F23798E43"
+    },
+    {
+      "path": "firmware/encoder_pin_probe/include/probe_logic.h",
+      "bytes": 1239,
+      "sha256": "C3DB7009857074E6BE4152054E49F162FA93FE0EA51ED646DF0C11233F6454D9"
+    },
+    {
+      "path": "firmware/encoder_pin_probe/src/main.cpp",
+      "bytes": 3398,
+      "sha256": "8AD99A8256D22D7003765A1CBCE17B771F59084D8F974F659F43F94B826AF729"
+    },
+    {
+      "path": "firmware/encoder_pin_probe/test/host_test.cpp",
+      "bytes": 1055,
+      "sha256": "AFBC3C922B6A5DB48B3F3BA4259A0055B617C3EAA875A1A1C5AF106023A51995"
+    },
+    {
+      "path": "firmware/mega_cart/platformio.ini",
+      "bytes": 1390,
+      "sha256": "C8BB6335D7FA554759C5F11BDFE61051C3E2CB63A045F466EA22F01C1946460A"
+    },
+    {
+      "path": "firmware/mega_cart/include/cart_controller.h",
+      "bytes": 3290,
+      "sha256": "5E7E98144D255158922CC75F3F5E9B9789CFFD11A1EFF8EA9F010FD9A3A6D65D"
+    },
+    {
+      "path": "firmware/mega_cart/include/manual_hardware_config.h",
+      "bytes": 1256,
+      "sha256": "8DD4F35880E3C16DCBBB684CEF8FA8D8D660ADB766F589CE3C335037AFFB8B24"
+    },
+    {
+      "path": "firmware/mega_cart/src/cart_controller.cpp",
+      "bytes": 13808,
+      "sha256": "7AD2CD096D8890EED77E51D3E9FA1FE36F08A8373968E5573363C008FAA38BF5"
+    },
+    {
+      "path": "firmware/mega_cart/src/main.cpp",
+      "bytes": 6604,
+      "sha256": "E371D3A8030B127943A210C91BA8E6EB60A5117A31CBD3B64DD78BC8A1562EDC"
+    },
+    {
+      "path": "firmware/mega_cart/test/host_diagnostic_tests.cpp",
+      "bytes": 2518,
+      "sha256": "1B9B1603A1AAEE7C01DCA2ECDAE344E5364100BCCF3F045930B1973A0659BD79"
+    },
+    {
+      "path": "firmware/mega_cart/test/host_legacy_ramp_tests.cpp",
+      "bytes": 1649,
+      "sha256": "6F412574D72BA540FC4DC10C27EBA1A50DB56B4F8081B50E66521FE44B51085A"
+    },
+    {
+      "path": "firmware/mega_cart/test/host_pwm_tests.cpp",
+      "bytes": 2426,
+      "sha256": "D8453EA4C395FC7418860C6514F389F92DE57C6D6698E97C0F66A53E3D3C0E13"
+    },
+    {
+      "path": "firmware/mega_cart/test/host_tests.cpp",
+      "bytes": 8981,
+      "sha256": "7BC62FF18805843A602F9EA5CDF6BACC7DF9D45108C3DEF60C4DDE4714EC934D"
+    },
+    {
+      "path": "firmware/mega_cart/test/host_wire.cpp",
+      "bytes": 917,
+      "sha256": "7FD3539F2263449F17899352B2EC9E2AFFD8A62A4A93987715C598558661FB01"
+    },
+    {
+      "path": "firmware/mega_cart/test/simulator_wire.cpp",
+      "bytes": 2843,
+      "sha256": "F4599FE120AA025F940710BFD7BD1181925D7D973F3D67FD9C49A3ADDAAB2EA3"
+    },
+    {
+      "path": "firmware/mega_cart/test/avr_stub/Arduino.h",
+      "bytes": 1541,
+      "sha256": "C90FEF9AB7BC5F39F0E28B8C41227CEB278741CEE84649DF2E8E066ECBE37F0B"
+    },
+    {
+      "path": "firmware/mega_cart/test/avr_stub/util/atomic.h",
+      "bytes": 151,
+      "sha256": "DF74852AF72D3BE700BBB8BB6E5B0B2551223809B693B86760918B2A6B9301F6"
+    },
+    {
+      "path": "firmware/prebuilt/mega_manual_legacy_5khz_20261009.hex",
+      "bytes": 39114,
+      "sha256": "B06FE718700A621008183893DFEE2BBA7FE9D9AA7F83EEA5202E85C2D716F674"
+    },
+    {
+      "path": "reference_photos/wiring-1.jpg",
+      "bytes": 2297880,
+      "sha256": "B46B99EA8C56413590438F851F1EBF830FE2EAB1C69E57F20F5764C6FAAE4124"
+    },
+    {
+      "path": "reference_photos/wiring-2.jpg",
+      "bytes": 3010415,
+      "sha256": "F1E598013146B5496788CDF06215F30F1CFD067379C2C915492B9F2402F3593E"
+    },
+    {
+      "path": "reference_photos/wiring-3.jpg",
+      "bytes": 2674602,
+      "sha256": "0DEA2D64ED0C3D2753DC8D845F5C16A962CDDAE7551FF6DFAAD021EF0972F63D"
+    },
+    {
+      "path": "reference_photos/wiring-4.jpg",
+      "bytes": 2607324,
+      "sha256": "F81B33BC28680DAABFF090808F4AAB6B325C2847FA6E2B209CE64B949F176DDC"
+    },
+    {
+      "path": "reference_photos/wiring-5.jpg",
+      "bytes": 2930997,
+      "sha256": "E69C4EE43DD0B36D1F5A85EFE28979672233F67C3DE42142C260435BC947C5A2"
+    },
+    {
+      "path": "reference_photos/wiring-6.jpg",
+      "bytes": 2879716,
+      "sha256": "22D974600CE166614AB70802C065F72836AF13A21B318B3D25D8795393BE928B"
+    },
+    {
+      "path": "scripts/bench_console.py",
+      "bytes": 4502,
+      "sha256": "90212EB3DC13313B615439846E1F5881E75C7EF370BEA124EEF8C320C95380E1"
+    },
+    {
+      "path": "scripts/manual_first_drive.design-contract.json",
+      "bytes": 1885,
+      "sha256": "DA16AED1E3BA704380A187835BCA5C05FF5EB96708ED631DE643EECA233D84D7"
+    },
+    {
+      "path": "scripts/manual_first_drive.py",
+      "bytes": 16865,
+      "sha256": "AA2E880A25E545902EBADF09C92F831E151B5ACEA751A87C5F9573CBB79061EB"
+    },
+    {
+      "path": "scripts/terminal_mock.py",
+      "bytes": 3397,
+      "sha256": "B7F52E7A8A6D0563DA60C0B001E1EE79C24120E9B2A45743E854231167429846"
+    },
+    {
+      "path": "scripts/verify_bench_host.sh",
+      "bytes": 2609,
+      "sha256": "4B99138ABFD50FE7A4CCB34CC9F103B071AC09E3B7B2005299B561CCA1C113FF"
+    },
+    {
+      "path": "scripts/verify_firmware_contract.py",
+      "bytes": 3892,
+      "sha256": "AD2A2E343B537ED286B7A270D1B1BD6D7DDC79F696DB3A0D02F2A5C7ADBBF894"
+    },
+    {
+      "path": "scripts/verify_manual_hardware.py",
+      "bytes": 10345,
+      "sha256": "E48CC236CAD80BA80C46B9FF61298D553FBA055810F8F51EA282D0DE66FF823A"
+    },
+    {
+      "path": "src/wafer_cart_core/package.xml",
+      "bytes": 579,
+      "sha256": "706EB294CD8CFCFD83E8D5596D5D14FFCF22719D96C0C269C6FFF7351F250B48"
+    },
+    {
+      "path": "src/wafer_cart_core/setup.cfg",
+      "bytes": 100,
+      "sha256": "D0B1F9026CBAC59A5F605F635B8F8803C49518B22EC104C7A2C982028E843CE4"
+    },
+    {
+      "path": "src/wafer_cart_core/setup.py",
+      "bytes": 714,
+      "sha256": "CB36F4E0E59D86690E5ABD654954C879358F02215F50A9732AF6163308FC4C44"
+    },
+    {
+      "path": "src/wafer_cart_core/config/mission_defaults.yaml",
+      "bytes": 165,
+      "sha256": "F8EC07279109FC559E843BD64BAB5A9625259E9AD1EB6FA17E330EC3BAD5B21B"
+    },
+    {
+      "path": "src/wafer_cart_core/resource/wafer_cart_core",
+      "bytes": 1,
+      "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B"
+    },
+    {
+      "path": "src/wafer_cart_core/test/test_line_person_drive.py",
+      "bytes": 7624,
+      "sha256": "9D3409A6C9248B2735393F089DBD85279C092C172E5EFC15EEC9A41F40EBA8C1"
+    },
+    {
+      "path": "src/wafer_cart_core/test/test_line_tracking.py",
+      "bytes": 2961,
+      "sha256": "7E8B2DF89669ED87AD031E6D53A894CEB96E5A473B9960EDB624DDFB36AE78E2"
+    },
+    {
+      "path": "src/wafer_cart_core/test/test_mission.py",
+      "bytes": 6452,
+      "sha256": "5ABC2CF0F4D4BD47B73DE56B8B7AE16C7F12D4A7490ACEA65A29A630A0805BFD"
+    },
+    {
+      "path": "src/wafer_cart_core/test/test_preflight.py",
+      "bytes": 2082,
+      "sha256": "619A175C30B803C28080A1D890B3A1AFEB1ECD27652CC0D20182B4DA396555E1"
+    },
+    {
+      "path": "src/wafer_cart_core/test/test_safety_gate.py",
+      "bytes": 3548,
+      "sha256": "75EE8BB4FB7D13FD341D2F6F580E4D61172600996EBD9DBFE438ECD107B9F673"
+    },
+    {
+      "path": "src/wafer_cart_core/wafer_cart_core/__init__.py",
+      "bytes": 438,
+      "sha256": "D5DB223187D45F450E0CC263C3B72FA0339C15D45E7B9C8187926C44865ABC4E"
+    },
+    {
+      "path": "src/wafer_cart_core/wafer_cart_core/line_person_drive.py",
+      "bytes": 8503,
+      "sha256": "580D0A3E5091A8DF95F26551933967365C887A9F3003FE03DDCE231E2796C649"
+    },
+    {
+      "path": "src/wafer_cart_core/wafer_cart_core/line_tracking.py",
+      "bytes": 3294,
+      "sha256": "E985DC68687098D774C478093EC699A742D42B26A55AE54CB16F050588DB426A"
+    },
+    {
+      "path": "src/wafer_cart_core/wafer_cart_core/mission.py",
+      "bytes": 10315,
+      "sha256": "4162B9E6055DADA0AB6354199C5FAD6E6D7117BBA6CECAC42D1BDCA4ED3AE0E3"
+    },
+    {
+      "path": "src/wafer_cart_core/wafer_cart_core/preflight.py",
+      "bytes": 1965,
+      "sha256": "3A8D1741F0B8B9C0F0A9C71BC4DBA1D9EBECCA802F14F8B9A655A46D1A42A407"
+    },
+    {
+      "path": "src/wafer_cart_core/wafer_cart_core/safety_gate.py",
+      "bytes": 5485,
+      "sha256": "FA52999D1F4F1CAAB7BE30A04FEAC751FABCBB5A3E45DECE91D1926C58A7FF3C"
+    },
+    {
+      "path": "src/wafer_cart_keyboard_drive/package.xml",
+      "bytes": 667,
+      "sha256": "79541601737B6C2FF29C670E0C4F2522DF928D68AC45C404B59D4A2D9756AB12"
+    },
+    {
+      "path": "src/wafer_cart_keyboard_drive/setup.cfg",
+      "bytes": 119,
+      "sha256": "D8297964B194D3E6714B970050A73B7896C26E276AA5741D7427EC073DA6E421"
+    },
+    {
+      "path": "src/wafer_cart_keyboard_drive/setup.py",
+      "bytes": 792,
+      "sha256": "6C7919468A555F2C7BB730F84C5E042461C2AA6632538D06C3FCB1FEBA454F6A"
+    },
+    {
+      "path": "src/wafer_cart_keyboard_drive/resource/wafer_cart_keyboard_drive",
+      "bytes": 1,
+      "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B"
+    },
+    {
+      "path": "src/wafer_cart_keyboard_drive/test/test_ack_guard.py",
+      "bytes": 1375,
+      "sha256": "CCA95AAF53C2B27084CF7FEA7EEC77B37EF28B9934BDBAD95CCE0461E3731EA6"
+    },
+    {
+      "path": "src/wafer_cart_keyboard_drive/test/test_bench_gateway.py",
+      "bytes": 10921,
+      "sha256": "66E20743C5AD37857937A06717FC6FC98466B92693FA92175FB4DAFFA2193607"
+    },
+    {
+      "path": "src/wafer_cart_keyboard_drive/test/test_bench_protocol.py",
+      "bytes": 1889,
+      "sha256": "502FD484149DF9F6F5BEC2D59760C9C2659333C17E751997FD20E742FC067246"
+    },
+    {
+      "path": "src/wafer_cart_keyboard_drive/test/test_config.py",
+      "bytes": 1167,
+      "sha256": "36A7EF2D08128973FB55CBF9C3E1932B25C6832F1850BA14887FAF18309DDF19"
+    },
+    {
+      "path": "src/wafer_cart_keyboard_drive/test/test_manual_commissioning.py",
+      "bytes": 2548,
+      "sha256": "91512D9B7CBB965B7D5EB3C0E980B1027ABDFF33F2248C82601A2F412780F2DD"
+    },
+    {
+      "path": "src/wafer_cart_keyboard_drive/test/test_manual_first_drive.py",
+      "bytes": 13412,
+      "sha256": "AF3F9547FE70A1CAA0F088ABCC22D90A3B76366DB28BF8A9A55DF03C86FF40F2"
+    },
+    {
+      "path": "src/wafer_cart_keyboard_drive/test/test_manual_hardware.py",
+      "bytes": 1628,
+      "sha256": "78E22081889A9C541E255032DFFC23C86903B5C94B730228A5356207F6394295"
+    },
+    {
+      "path": "src/wafer_cart_keyboard_drive/test/test_policy.py",
+      "bytes": 1624,
+      "sha256": "859CB912B7D9DAA59B4C27909FAA01C93A03973FC7A60E5CECE7B45BE17A7CBF"
+    },
+    {
+      "path": "src/wafer_cart_keyboard_drive/test/test_simulation_plant.py",
+      "bytes": 2271,
+      "sha256": "DC3F3BF2F55C2C89B2FF5DD955D321B78B1E2507AE9246F5E493CF25C96D4A3E"
+    },
+    {
+      "path": "src/wafer_cart_keyboard_drive/test/test_terminal_cli.py",
+      "bytes": 1167,
+      "sha256": "945937137CF50B4F402DAB5E7105445D0F03014EF4A60BD76FF3569E6A82238F"
+    },
+    {
+      "path": "src/wafer_cart_keyboard_drive/test/test_transport.py",
+      "bytes": 580,
+      "sha256": "362FA68AD335BC56844417B95F7E2DFC9AF024767A31308BF1109E11166B0F50"
+    },
+    {
+      "path": "src/wafer_cart_keyboard_drive/wafer_cart_keyboard_drive/__init__.py",
+      "bytes": 205,
+      "sha256": "108754027A3D49DF2B13867DD9A6B1BBCFAEB50B284A90D678F0DBF7ABC19C6D"
+    },
+    {
+      "path": "src/wafer_cart_keyboard_drive/wafer_cart_keyboard_drive/bench_gateway.py",
+      "bytes": 16869,
+      "sha256": "A7BBF11B15191449949BF47408AF5B93480521E1FFF30ED2C5A7A8B6EB6A592E"
+    },
+    {
+      "path": "src/wafer_cart_keyboard_drive/wafer_cart_keyboard_drive/bench_mock.py",
+      "bytes": 8143,
+      "sha256": "0CAECF6D9391BBC8CC3BF8044DB7776AA2AE1CACB751AE5353EC32E5CDE9F526"
+    },
+    {
+      "path": "src/wafer_cart_keyboard_drive/wafer_cart_keyboard_drive/bench_protocol.py",
+      "bytes": 2536,
+      "sha256": "05DD1B28E6BDC2ACE6BC621F347BA61D45FD043033A60558E91A424056F83E1A"
+    },
+    {
+      "path": "src/wafer_cart_keyboard_drive/wafer_cart_keyboard_drive/cli.py",
+      "bytes": 6312,
+      "sha256": "5A465EAD5DEB0FFAAA2E5FED64BD385154B934FAF0630ECF4B43141EF0714DA5"
+    },
+    {
+      "path": "src/wafer_cart_keyboard_drive/wafer_cart_keyboard_drive/config.py",
+      "bytes": 1952,
+      "sha256": "AE0B6D94B7EB44B000771A55F4D66A3E01452BE4F1B5CEE2DC7E6325A9A86516"
+    },
+    {
+      "path": "src/wafer_cart_keyboard_drive/wafer_cart_keyboard_drive/firmware_simulator.py",
+      "bytes": 6268,
+      "sha256": "607BA27F86316E0332B66C8975BF2100F0A5633235003653D157EF75D3B9E85F"
+    },
+    {
+      "path": "src/wafer_cart_keyboard_drive/wafer_cart_keyboard_drive/manual_commissioning.py",
+      "bytes": 3394,
+      "sha256": "F62BBEC737925066149B1F6E1901012E5361258F88106A0DFD903E1AB1D5B291"
+    },
+    {
+      "path": "src/wafer_cart_keyboard_drive/wafer_cart_keyboard_drive/manual_first_drive.py",
+      "bytes": 9016,
+      "sha256": "D1A12C91F57382ECFA183C4E6FEA730688A022360C8A9B831CB74927C250C831"
+    },
+    {
+      "path": "src/wafer_cart_keyboard_drive/wafer_cart_keyboard_drive/manual_hardware.py",
+      "bytes": 4137,
+      "sha256": "FB4686D863C646D675E89074AB1DA5367C85E128180D3DE24B4BB9BD5B8E0CB0"
+    },
+    {
+      "path": "src/wafer_cart_keyboard_drive/wafer_cart_keyboard_drive/manual_simulation.py",
+      "bytes": 5928,
+      "sha256": "3AC35FDAC83F22DF6C13B874E33C1F2AB5E19A0A7FB0105AD8260685F2F7AAC2"
+    },
+    {
+      "path": "src/wafer_cart_keyboard_drive/wafer_cart_keyboard_drive/manual_simulator_ui.py",
+      "bytes": 35989,
+      "sha256": "A3EC10FC1A9356A9BDE1988B672660F11EFFE68B6A287173DA7DE76F2847C975"
+    },
+    {
+      "path": "src/wafer_cart_keyboard_drive/wafer_cart_keyboard_drive/policy.py",
+      "bytes": 2806,
+      "sha256": "C7727FE7447F56E35D35FB8CDFDB8E969A07F33C6B70969B6AA547FCD3490A7C"
+    },
+    {
+      "path": "src/wafer_cart_keyboard_drive/wafer_cart_keyboard_drive/simulation_plant.py",
+      "bytes": 4314,
+      "sha256": "C702354AC376E394503D8F684B8C3A094B743E10004022AC5C4A0E8089FCA7B1"
+    },
+    {
+      "path": "src/wafer_cart_keyboard_drive/wafer_cart_keyboard_drive/transport.py",
+      "bytes": 3036,
+      "sha256": "89C59DCF7808D0E8AB141936FDF03D55C3A0C08579AD2D99E018C0F86C48B525"
+    },
+    {
+      "path": "src/wafer_cart_keyboard_drive/web_sim/index.html",
+      "bytes": 3348,
+      "sha256": "D93F0A11FA1901900D103140B9F4E61DD9D72CE6F692AA232BEC7E37636EE68A"
+    },
+    {
+      "path": "src/wafer_cart_keyboard_drive/web_sim/sim.css",
+      "bytes": 2095,
+      "sha256": "E39A705342119FD710A611B5FC8336C36A73717A4628C4C99793460ACC4C1160"
+    },
+    {
+      "path": "src/wafer_cart_keyboard_drive/web_sim/sim.js",
+      "bytes": 4862,
+      "sha256": "6C9844A7C48C43E65AB77CEA75F744317AC2783A172E352327605DCB97E1549A"
+    },
+    {
+      "path": "src/wafer_cart_mapping/config/booth_mock.json",
+      "bytes": 702,
+      "sha256": "3629777FA2F1D5428C90A041DB074D26413AE60AA06D2F87617D054925ECF7CF"
+    },
+    {
+      "path": "src/wafer_cart_mapping/config/measurements.json",
+      "bytes": 4567,
+      "sha256": "E370FB6167B14D0CF34543CB494499E8978C4FC328773BEBBA97EED832F5F218"
+    },
+    {
+      "path": "src/wafer_cart_mapping/config/reference_measurements.json",
+      "bytes": 6799,
+      "sha256": "3D9A5F5EFEF03867D282142754C272D10395EEF995899A825860C989DFEE1DF5"
+    }
+  ]
+}

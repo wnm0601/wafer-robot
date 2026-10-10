@@ -1,0 +1,220 @@
+{
+  "schema_version": 1,
+  "physical_measurements_verified_now": false,
+  "encoder_history": {
+    "status": "historical_candidate_requires_revalidation",
+    "motor_model": "IG-42GM+Encoder 02TYPE (24V)",
+    "gear_ratio": null,
+    "counting_mode": "A rising edge x1; B determines signed direction",
+    "original_five_turn_counts_m1_m2_m3_m4": [
+      4533,
+      -4659,
+      -4370,
+      -4714
+    ],
+    "original_counts_per_rev": [
+      906.6,
+      931.8,
+      874.0,
+      942.8
+    ],
+    "later_remapped_motor_order": [
+      "M1_FR",
+      "M2_FL",
+      "M3_RR",
+      "M4_RL"
+    ],
+    "later_remapped_counts_per_rev": [
+      942.8,
+      931.8,
+      906.6,
+      874.0
+    ],
+    "ros_order": [
+      "FL",
+      "FR",
+      "RL",
+      "RR"
+    ],
+    "ros_order_candidate_counts_per_rev": [
+      931.8,
+      942.8,
+      874.0,
+      906.6
+    ],
+    "encoder_a_pins_m1_m2_m3_m4": [
+      19,
+      18,
+      3,
+      20
+    ],
+    "encoder_b_pins_m1_m2_m3_m4": [
+      32,
+      31,
+      30,
+      33
+    ],
+    "firmware_encoder_invert": [
+      true,
+      false,
+      true,
+      false
+    ],
+    "max_command_percent_historical": 30,
+    "sources": [
+      "Codex 통합 py 코드 / 019f4206-c409-72d1-8cc9-3e7a7fad8291 / turn 019f86e5-6306-7373-bf4d-929cc486ef34",
+      "Codex 통합 py 코드 / turn 019fa792-701c-7f00-944f-b5b35da5800d / later remapping",
+      "C:/Users/H/Desktop/단일카메라_YOLO접근_리팩터링/urt/mecanum_motor/src/main.cpp:86",
+      "C:/Users/H/Desktop/단일카메라_YOLO접근_리팩터링/scripts/collect_motor_speed.py:16"
+    ],
+    "limitations": [
+      "당시 수동 5회전 전제의 기록이며 최초 M4에는 5276과 4714의 차이가 있었습니다.",
+      "이후 핀 묶음 기준 재배치되었습니다. 실제 바퀴 대응과 반복 측정은 현재 재검증하지 않았습니다.",
+      "현재 firmware 업로드 상태·배선·바퀴 교체 여부·부호는 미확인입니다.",
+      "x2/x4 decoder에 이 숫자를 그대로 쓰면 안 됩니다. 실제 /odom에는 아직 적용하지 않습니다."
+    ]
+  },
+  "venue": {
+    "source": "사용자 부스 사진과 테이블 1800 mm 설명",
+    "image_layout_reference_only": true,
+    "table_length_mm_user_reported": 1800,
+    "aisle_width_m": null,
+    "route_length_m": null,
+    "note": "현장 폭·왕복 거리·회전 공간은 사진에서 추정하지 않습니다. 가상 6m 방은 현장 재현이 아닙니다."
+  },
+  "cad": {
+    "status": "cad_reference_not_physical_measurement",
+    "source": "C:\\Users\\H\\Desktop\\솔월\\기본 틀 어셈블리 2층 바닥 전체 장착본 400X400.SLDASM",
+    "captured_at": "2026-09-28T19:49:34.6153031+09:00",
+    "active_document_unsaved": true,
+    "component_count": 226,
+    "solid_count": 118,
+    "assembly_extent_xyz_mm": [
+      436.8396988242321,
+      832.2566193411353,
+      686.9681489133142
+    ],
+    "bounds_xyz_m": [
+      -0.5521392095085096,
+      -0.07009477958664953,
+      0.18776031030132562,
+      -0.11529951068427753,
+      0.7621618397544858,
+      0.8747284592146397
+    ],
+    "plate_bounds_m": {
+      "바닥 아크릴 400X400 수정본-1": [
+        -0.540478077864751,
+        0.04216183975448575,
+        0.3182820874187783,
+        -0.12047807786474399,
+        0.05216183975448582,
+        0.738282087418775
+      ],
+      "2층 아크릴 400X400 수정본-1": [
+        -0.5404780778647613,
+        0.40489666320317885,
+        0.3182820874187758,
+        -0.12047807786476075,
+        0.40789666320317886,
+        0.7382820874187763
+      ]
+    },
+    "floor_plate_x_z_mm": [
+      420.00000000000705,
+      419.9999999999967
+    ],
+    "lower_plate_thickness_mm": 10.000000000000071,
+    "upper_plate_thickness_mm": 3.0000000000000027,
+    "inter_plate_clearance_mm": 352.734823448693,
+    "hub_axis_candidates": [
+      {
+        "component": "MecanumB-1/plato_copla-1",
+        "axis_point_xyz_m": [
+          -0.5005582197809544,
+          -0.015607907171708233,
+          0.26850297036366205
+        ],
+        "axis_direction": [
+          -0.013897422727271538,
+          0.004273938614118823,
+          0.9998942919580363
+        ],
+        "bore_diameter_mm": 6.000000000000001,
+        "tilt_from_cad_z_deg": 0.8330968075343563
+      },
+      {
+        "component": "Mecanum-2/plato_copla-1",
+        "axis_point_xyz_m": [
+          -0.49811999857614847,
+          -0.01221764694217204,
+          0.8041960093069349
+        ],
+        "axis_direction": [
+          -6.890321646579879e-15,
+          1.9719132858676694e-30,
+          -1.0
+        ],
+        "bore_diameter_mm": 6.000000000000001,
+        "tilt_from_cad_z_deg": 0.0
+      },
+      {
+        "component": "MecanumB-2/plato_copla-1",
+        "axis_point_xyz_m": [
+          -0.16733076894503077,
+          -0.018600910481282047,
+          0.7943436829037896
+        ],
+        "axis_direction": [
+          -6.750315057259963e-15,
+          -2.359042163632915e-16,
+          -1.0
+        ],
+        "bore_diameter_mm": 6.000000000000001,
+        "tilt_from_cad_z_deg": 0.0
+      },
+      {
+        "component": "Mecanum-1/plato_copla-1",
+        "axis_point_xyz_m": [
+          -0.16694778228855817,
+          -0.014456801819093874,
+          0.27474234974256545
+        ],
+        "axis_direction": [
+          1.5780204855534167e-30,
+          1.9719132858676694e-30,
+          1.0
+        ],
+        "bore_diameter_mm": 6.000000000000001,
+        "tilt_from_cad_z_deg": 0.0
+      }
+    ],
+    "hub_axis_x_span_mm": 333.6104374923962,
+    "hub_axis_y_height_spread_mm": 6.383263539110007,
+    "mock_footprint_m": [
+      [
+        0.21841984941211603,
+        0.3434840744566571
+      ],
+      [
+        -0.21841984941211603,
+        0.3434840744566571
+      ],
+      [
+        -0.21841984941211603,
+        -0.3434840744566571
+      ],
+      [
+        0.21841984941211603,
+        -0.3434840744566571
+      ]
+    ],
+    "mock_axis_assumption": "CAD +X를 가상 전방, -Z를 가상 왼쪽으로 둡니다. 원점은 전체 외곽 중심이며 실차 base_link가 아닙니다.",
+    "limitations": [
+      "허브 원통의 축 위 점은 바퀴 폭 중앙이 아닙니다. Z 차이를 track으로 사용하지 않습니다.",
+      "MecanumB-1 축 기울기와 네 허브 높이 차이가 있어 조립 mate 확인이 필요합니다.",
+      "바퀴 지름·접지중심·최종 외장·센서 위치는 실물 재확인이 필요합니다."
+    ],
+    "extraction_sha256": "127b6e875d9d2f609270b5d8cc68a515bf6bd6b9d5224b2217d32e6711f83af4"
+  }
+}

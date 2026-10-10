@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "kind": "pending_hardware_not_motor_authorization",
+  "physical_output_enabled": false,
+  "power_configuration": null,
+  "driver_model_reported": "MDD10A",
+  "driver_revision": null,
+  "main_battery_voltage_measured_v": null,
+  "auxiliary_battery_max_voltage_v": null,
+  "contactor_coil_voltage_measured_v": null,
+  "power_feedback_pin": null,
+  "power_feedback_active_level": null,
+  "physical_estop_cutoff_tested": false,
+  "manual_rearm_tested": false,
+  "polarity_fuse_ground_checked": false,
+  "reset_output_behavior_tested": false,
+  "uploaded_firmware_identity": null,
+  "approved_command_percent_limit": null,
+  "physical_wheel_for_m1_m4": [null, null, null, null],
+  "encoder_forward_signs_m1_m4": [null, null, null, null],
+  "operator_and_wheel_support_ready_reported": true,
+  "report_basis": "user_reported_2026-09-29_not_physical_verification",
+  "selected_pins": {
+    "pwm": [11, 44, 12, 45],
+    "dir": [34, 36, 35, 37],
+    "encoder_a": [3, 18, 19, 20],
+    "encoder_b": [30, 31, 32, 33]
+  },
+  "note": "모터 위치·부호·전압·입력 극성·실측 속도를 임의로 채우지 않습니다. 파일의 체크값을 변경해도 실제 출력 잠금은 해제되지 않습니다."
+}

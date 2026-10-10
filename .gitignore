@@ -1,0 +1,12 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+**/.pio/
+.env
+.env.*
+data/output/*
+!data/output/.gitkeep
+data/manual_simulation_ui.json
+*.zip

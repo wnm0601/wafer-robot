@@ -1,0 +1,687 @@
+{
+  "schema_version": 1,
+  "kind": "document_reference_not_runtime_config",
+  "reviewed_at": "2026-09-29",
+  "hardware_verified": false,
+  "uploaded_firmware_verified": false,
+  "runtime_enabled": false,
+  "note": "사용자가 PDF 설계를 향후 개발 기준으로 선택한 비활성 참고표입니다. 실제 pin 적용·업로드·motor enable·실측 완료를 뜻하지 않습니다.",
+  "design_decision": {
+    "status": "user_selected_for_future_development",
+    "selected_baseline": "pdf_shield_design",
+    "selected_sections": ["shield", "pcb_a", "report_shield_motor_profile", "voltage_reference"],
+    "selected_at": "2026-09-29",
+    "confirmed_by": "user",
+    "source_statement": "핀번호 바뀐거 맞고 실제 사진없어도 괜찮아 저대로 갈거야",
+    "photos_required_for_software_preparation": false,
+    "physical_checks_required_before_motor_operation": true,
+    "firmware_source_updated": false,
+    "firmware_upload_authorized": false,
+    "motor_operation_authorized": false
+  },
+  "user_confirmed_hardware_configuration": {
+    "recorded_at": "2026-09-29",
+    "verification": "user_reported_not_physically_tested",
+    "board": "Arduino Mega 2560",
+    "motor_drivers": {
+      "model": "MDD10A",
+      "quantity": 2,
+      "hardware_revision": null
+    },
+    "main_battery": {
+      "brand_reported": "VOLTON",
+      "nominal_voltage_v": 24,
+      "capacity_ah": 10,
+      "role_reported": "main_power_supply",
+      "exact_model": null,
+      "chemistry": null,
+      "max_charge_voltage_v": 29.4,
+      "max_charge_voltage_verification": "user_reported_belief_not_measured",
+      "protection_verified": false
+    },
+    "auxiliary_battery": {
+      "nominal_voltage_v": 24,
+      "capacity_ah": null,
+      "role_reported": "contactor_switch_control_supply_planned",
+      "exact_model": null,
+      "max_charge_voltage_v": null,
+      "relationship_to_main_battery": null,
+      "note": "접촉기 제어 용도로 기록하며 주 배터리와 직렬/병렬 또는 공통 GND 결선으로 추정하지 않습니다."
+    },
+    "contactor_estop": {
+      "implementation_reported": "physical_button_interrupts_power_via_contactor",
+      "contactor_model": "LS ELECTRIC MC-40a",
+      "model_and_coil_source": "user_supplied_reference_image_not_installed_nameplate_verified",
+      "coil_rated_dc_voltage_v": 24,
+      "coil_consumption_w": null,
+      "main_contact_dc_voltage_rating_v": null,
+      "main_contact_continuous_rating_a": null,
+      "main_contact_dc_breaking_rating_a": null,
+      "interrupted_power_branches": null,
+      "logic_power_retained": true,
+      "logic_power_retained_verification": "arduino_only_user_reported_not_cutoff_tested",
+      "control_supply_loss_behavior": null,
+      "feedback_method": null,
+      "feedback_gpio": null,
+      "coil_suppression_verified": false,
+      "physical_cutoff_test_passed": false,
+      "manual_rearm_verified": false,
+      "mechanical_stop_distance_m": null
+    },
+    "wheel_mapping_status": "deferred_to_future_channel_and_encoder_test",
+    "requested_pwm_frequency_hz": 3900,
+    "frequency_source": "user_project_requirement_not_manufacturer_recommendation_verified",
+    "approved_motion_command_percent_limit": null,
+    "approved_electrical_duty_percent_limit": null,
+    "note": "사용자 구성 확인은 실측·배선 검증·motor enable 승인과 구분합니다."
+  },
+  "mdd10a_manufacturer_specification": {
+    "checked_at": "2026-09-29",
+    "source_url": "https://www.cytron.io/cytron/p-10amp-5v-30v-dc-motor-driver-2-channels",
+    "max_pwm_input_frequency_hz": 20000,
+    "control_modes": ["sign_magnitude", "locked_antiphase"],
+    "rev2_motor_supply_min_v": 5,
+    "rev2_motor_supply_max_v": 30,
+    "continuous_current_per_channel_a": 10,
+    "peak_current_per_channel_a": 30,
+    "peak_duration_s": 10,
+    "reverse_polarity_protection_at_motor_supply": false,
+    "note": "제조사 사양이며 현재 장착 revision·실제 부하·시험 출력 상한의 검증값은 아닙니다."
+  },
+  "ls_mc40a_manufacturer_reference": {
+    "checked_at": "2026-09-29",
+    "source_url": "https://www.ls-electric.com/ko/cat/%5BMetasol_MS%5D_KO_C04001-35-202504.pdf",
+    "source_sha256": "61441a58c5087406863aa98bb699505a6328efa21dd00f05c9f648dad24a2a02",
+    "pdf_pages_text_and_visually_checked": [23, 24, 34, 178],
+    "page_number_basis": "one_based_pdf_page",
+    "standard_auxiliary_contacts": {
+      "configuration": "2a2b",
+      "normally_open_pairs": [[13, 14], [43, 44]],
+      "normally_closed_pairs": [[21, 22], [31, 32]],
+      "terminal_numbers_are_arduino_gpio": false,
+      "installed_option_verified": false,
+      "installed_continuity_verified": false,
+      "mirror_contact_safety_rating_verified": false
+    },
+    "dc24v_coil_specification": {
+      "rated_voltage_v": 24,
+      "operating_voltage_ratio_min": 0.85,
+      "operating_voltage_ratio_max": 1.10,
+      "derived_operating_voltage_min_v": 20.4,
+      "derived_operating_voltage_max_v": 26.4,
+      "energizing_and_holding_consumption_w": 8,
+      "consumption_reference_temperature_c": 20,
+      "installed_voltage_or_consumption_measured": false,
+      "battery_soc_85_percent_rule_manufacturer_verified": false
+    },
+    "three_main_poles_in_series_dc_ratings": [
+      {"category": "DC1", "load_l_over_r_ms": 1, "voltage_v": 24, "current_a": 35},
+      {"category": "DC1", "load_l_over_r_ms": 1, "voltage_v": 48, "current_a": 35},
+      {"category": "DC3,5", "load_l_over_r_ms": 15, "voltage_v": 24, "current_a": 35},
+      {"category": "DC3,5", "load_l_over_r_ms": 15, "voltage_v": 48, "current_a": 30}
+    ],
+    "ratings_note": "선택한 24/48V의 제조사 값입니다. 29.4V 보간이나 드라이버 2개·모터 4개에 대한 적합 판정은 하지 않습니다.",
+    "cart_load_application_approved": false,
+    "image_bridge_wiring_physically_verified": false,
+    "main_terminal_wire_review": {
+      "page23_ferrule_columns": "dash_not_a_confirmed_approved_combination",
+      "page23_no_ferrule_stranded_wire_awg_range": [12, 6],
+      "page23_no_ferrule_stranded_wire_mm2_range": [2.5, 16],
+      "page34_overview_wire_awg_range": [8, 6],
+      "page34_overview_wire_mm2_range": [10, 16],
+      "image_12awg_ferrule_combination_approved": false,
+      "note": "실제 단자·lug·부하와 표 적용 범위를 공급사에 확인해야 하며 자동 배선 지시로 사용하지 않습니다."
+    },
+    "arduino_retained_power_requirements": [
+      "physical_motor_power_cutoff_independent_of_mcu",
+      "protected_or_isolated_estop_contactor_state_feedback_gpio_pending",
+      "latched_estop_or_fault_clear_outputs_and_discard_queued_motion",
+      "reject_motion_while_cutoff_or_faulted",
+      "stable_feedback_and_explicit_manual_rearm_before_new_motion"
+    ],
+    "requirements_implemented_and_hardware_tested": false,
+    "note": "모델 표준 사양이며 장착 옵션·실측·배선 승인·안전 인증 또는 motor enable을 뜻하지 않습니다."
+  },
+  "source_pdf": {
+    "path": "C:/Users/H/Downloads/핀변경_보고서_HKX_PCB-A.pdf",
+    "pages": 4,
+    "sha256": "b521fd67c6967c2cdd8fba5449bb1d2d63c720d4656180cf1f029a6d33db1f0e",
+    "md5": "0e2ba70765286dd63817397a30d4dce5",
+    "reported_created_at": "2026-09-28 21:43",
+    "reported_project_root": "C:/Users/MSY/Desktop/ROBOT",
+    "reported_version": "10.0.4"
+  },
+  "reported_source_files": [
+    {
+      "key": "hkx_old",
+      "path": "MOTOR_DRIVER_PCB/_backup_20260915/desktop_MEGA_SHIELD_HKX_0717/MEGA_SHIELD_HKX.kicad_sch",
+      "md5": "8cabb86bf9378bdae058ec7ad664dac8",
+      "verification": "reported_in_pdf_original_not_available"
+    },
+    {
+      "key": "hkx_new",
+      "path": "MOTOR_DRIVER_PCB/MEGA_SHIELD_HKX/MEGA_SHIELD_HKX.kicad_sch",
+      "md5": "27a026b5856b317356eac5c0430772c3",
+      "verification": "reported_in_pdf_original_not_available"
+    },
+    {
+      "key": "pa_old",
+      "path": "MOTOR_DRIVER_PCB/_backup_20260915/desktop_PCB_POWER_A_0913/PCB_POWER_A.kicad_sch",
+      "md5": "19558c78894959650c8c08e2bfab20dd",
+      "verification": "reported_in_pdf_original_not_available"
+    },
+    {
+      "key": "pa_new",
+      "path": "MOTOR_DRIVER_PCB/PCB_POWER_A/PCB_POWER_A.kicad_sch",
+      "md5": "3ae4de2e6790c81a61cf75ef92a56bfd",
+      "verification": "reported_in_pdf_original_not_available"
+    },
+    {
+      "key": "fw",
+      "path": "urt/mecanum_motor/src/main.cpp",
+      "md5": "2e0a3927040113d7f1d7d977509282bf",
+      "verification": "reported_in_pdf_original_not_available"
+    },
+    {
+      "key": "doc",
+      "path": "MOTOR_DRIVER_PCB/전원 PCB_설계기준_24V2팩.md",
+      "md5": "49aa20faaeac9739ce216e692595ba2b",
+      "verification": "reported_in_pdf_original_not_available"
+    }
+  ],
+  "shield": {
+    "removed_connectors": [
+      "HK1",
+      "ST1",
+      "ST2",
+      "ST3"
+    ],
+    "disconnected_header_gpio": [
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      38,
+      39,
+      40
+    ],
+    "pin_lists_from_pin_1": {
+      "CN1": [
+        "D14",
+        "D15",
+        "D16",
+        "D17",
+        "A3",
+        "NC",
+        "NC",
+        "NC"
+      ],
+      "MD1": [
+        "D34",
+        "D11",
+        "D35",
+        "D12",
+        "GND"
+      ],
+      "MD2": [
+        "D36",
+        "D44",
+        "D37",
+        "D45",
+        "GND"
+      ],
+      "ENC1": [
+        "+5V",
+        "GND",
+        "D30",
+        "D3"
+      ],
+      "ENC2": [
+        "+5V",
+        "GND",
+        "D31",
+        "D18"
+      ],
+      "ENC3": [
+        "+5V",
+        "GND",
+        "D32",
+        "D19"
+      ],
+      "ENC4": [
+        "+5V",
+        "GND",
+        "D33",
+        "D20"
+      ],
+      "J1": [
+        "NC",
+        "IOREF",
+        "RESET",
+        "+3V3",
+        "+5V",
+        "GND",
+        "GND",
+        "VCC"
+      ],
+      "J2": [
+        "D21",
+        "D20",
+        "AREF",
+        "GND",
+        "D13",
+        "D12",
+        "D11",
+        "D10",
+        "D9",
+        "D8"
+      ],
+      "J3": [
+        "A0",
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5",
+        "A6",
+        "A7"
+      ],
+      "J4": [
+        "D7",
+        "D6",
+        "D5",
+        "D4",
+        "D3",
+        "D2",
+        "D1",
+        "D0"
+      ],
+      "J5": [
+        "A8",
+        "A9",
+        "A10",
+        "A11",
+        "A12",
+        "A13",
+        "A14",
+        "A15"
+      ],
+      "J6": [
+        "D14",
+        "D15",
+        "D16",
+        "D17",
+        "D18",
+        "D19",
+        "D20",
+        "D21"
+      ],
+      "J7": [
+        "GND",
+        "GND",
+        "D52",
+        "D53",
+        "D50",
+        "D51",
+        "D48",
+        "D49",
+        "D46",
+        "D47",
+        "D44",
+        "D45",
+        "D42",
+        "D43",
+        "D40",
+        "D41",
+        "D38",
+        "D39",
+        "D36",
+        "D37",
+        "D34",
+        "D35",
+        "D32",
+        "D33",
+        "D30",
+        "D31",
+        "D28",
+        "D29",
+        "D26",
+        "D27",
+        "D24",
+        "D25",
+        "D22",
+        "D23",
+        "+5V",
+        "+5V"
+      ]
+    },
+    "net_normalization_note": "D는 Mega digital 번호, A는 analog 번호입니다. PDF의 TX/RX/SDA·PWM * 표시는 보고서와 공식 pinout을 함께 확인합니다.",
+    "encoder_connector_pin_roles": [
+      "+5V",
+      "GND",
+      "B",
+      "A"
+    ]
+  },
+  "pcb_a": {
+    "removed_components": [
+      "C3",
+      "F1",
+      "J2"
+    ],
+    "f1_j2_note": "PDF 비교 이전 파일에도 이미 삭제되었다고 기록되어 있습니다.",
+    "u1": {
+      "part_reported": "ULN2003",
+      "pin9": "NC",
+      "relay_input_model": null,
+      "relay_active_level_verified": false
+    },
+    "pin_lists_from_pin_1": {
+      "J1": [
+        "+24V",
+        "GND"
+      ],
+      "J3": [
+        "+24V",
+        "GND"
+      ],
+      "J4": [
+        "+24V",
+        "GND"
+      ],
+      "J5": [
+        "+24V",
+        "GND",
+        "+12V",
+        "GND"
+      ],
+      "J6": [
+        "+12V",
+        "GND"
+      ],
+      "J7": [
+        "+12V",
+        "GND"
+      ],
+      "J8": [
+        "+24V",
+        "+12V",
+        "GND",
+        "GND"
+      ],
+      "J9": [
+        "LAMP1_OUT",
+        "LAMP2_OUT",
+        "LAMP3_OUT",
+        "LAMP4_OUT",
+        "GND"
+      ],
+      "J10": [
+        "+24V",
+        "GND"
+      ],
+      "J11": [
+        "LAMP1_IN",
+        "LAMP2_IN",
+        "LAMP3_IN",
+        "LAMP4_IN",
+        "VSENSE_A",
+        "GND",
+        "GND",
+        "NC"
+      ]
+    },
+    "old_j9": [
+      "RELAY_COM",
+      "LAMP1_OUT",
+      "LAMP2_OUT",
+      "LAMP3_OUT",
+      "LAMP4_OUT",
+      "GND"
+    ],
+    "xt60_warning": "PDF는 J1 pad1(네모)=+24V, pad2(원)=GND이며 실크 방향 주의를 기록합니다. 실물 극성·도통 확인 전 조립 지시로 사용하지 않습니다."
+  },
+  "report_shield_motor_profile": {
+    "status": "user_selected_design_not_applied",
+    "array_index": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "command_motor_number": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "pwm_pins": [
+      11,
+      44,
+      12,
+      45
+    ],
+    "dir_pins": [
+      34,
+      36,
+      35,
+      37
+    ],
+    "encoder_a_pins": [
+      3,
+      18,
+      19,
+      20
+    ],
+    "encoder_b_pins": [
+      30,
+      31,
+      32,
+      33
+    ],
+    "encoder_connector": [
+      "ENC1",
+      "ENC2",
+      "ENC3",
+      "ENC4"
+    ],
+    "physical_wheel_roles": null,
+    "pwm_timer_groups": {
+      "Timer1": [
+        11,
+        12
+      ],
+      "Timer5": [
+        44,
+        45
+      ]
+    },
+    "pwm_top": 4095
+  },
+  "pdf_firmware_snapshot": {
+    "md5": "2e0a3927040113d7f1d7d977509282bf",
+    "pwm_pins": [
+      5,
+      6,
+      7,
+      8
+    ],
+    "dir_pins": [
+      22,
+      23,
+      24,
+      25
+    ],
+    "encoder_a_pins": [
+      2,
+      3,
+      18,
+      19
+    ],
+    "encoder_b_reading_implemented": false,
+    "lamp_pins": [
+      14,
+      15,
+      16,
+      17
+    ],
+    "lamp_high_means_on": "reported_not_verified",
+    "lamp_code_commit_status": "reported_uncommitted",
+    "voltage_reading_implemented": false
+  },
+  "observed_h_refactoring_source": {
+    "path": "C:/Users/H/Desktop/단일카메라_YOLO접근_리팩터링/urt/mecanum_motor/src/main.cpp",
+    "md5": "1ab3a5308f70a823da7f1201a15d24e7",
+    "sha256": "a25c470cc5e3795f31d0777617217d0dae9dbff38e8e0aee7a63125f6cf1137e",
+    "pwm_pins": [
+      11,
+      44,
+      12,
+      45
+    ],
+    "dir_pins": [
+      34,
+      36,
+      35,
+      37
+    ],
+    "encoder_a_pins": [
+      19,
+      18,
+      3,
+      20
+    ],
+    "encoder_b_pins": [
+      32,
+      31,
+      30,
+      33
+    ],
+    "pos_to_motor_zero_based": [
+      1,
+      0,
+      3,
+      2
+    ],
+    "invert": [
+      true,
+      false,
+      true,
+      false
+    ],
+    "encoder_invert": [
+      true,
+      false,
+      true,
+      false
+    ],
+    "strafe_sign": -1,
+    "historical_encoder_counts_per_rev": [
+      942.8,
+      931.8,
+      906.6,
+      874
+    ],
+    "encoder_counting_mode": "A rising x1; read B for direction",
+    "lamp_code_found": false,
+    "voltage_code_found": false,
+    "max_command_percent": 30,
+    "max_duty_scale_255": 200,
+    "nominal_max_duty_scale_255_computed": 60,
+    "pwm_hz_computed_not_measured": 3906.25,
+    "ramp_step": 2,
+    "ramp_tick_ms": 15,
+    "nominal_60_to_zero_ramp_ms_computed": 450,
+    "command_timeout_ms": 500,
+    "stall_timeout_ms": 600,
+    "baudrate": 115200,
+    "estop_latched_for_future_motion": false,
+    "upload_verified": false
+  },
+  "observed_wsl_vendor_source": {
+    "path": "/home/mnw/ros2_ws/vendor/ROBOT/urt/mecanum_motor/src/main.cpp",
+    "md5": "86a1819b66261ef9b9563d46df493574",
+    "pwm_pins": [
+      5,
+      6,
+      7,
+      8
+    ],
+    "dir_pins": [
+      22,
+      23,
+      24,
+      25
+    ],
+    "encoder_a_pins": [
+      2,
+      3,
+      18,
+      19
+    ],
+    "encoder_counting_mode": "A only, command-derived sign",
+    "lamp_code_found": false,
+    "voltage_code_found": false,
+    "ros_branch": "codex/phase-6-base-gateway-mock",
+    "ros_head": "00b86c48496cd2013117e4a0d9abbd373afbf9df",
+    "note": "vendor는 untracked이므로 ROS HEAD를 vendor 내용의 commit으로 보지 않습니다."
+  },
+  "voltage_reference": {
+    "mega_pin": "A3",
+    "cn1_pin": 5,
+    "pcb_j11_pin": 5,
+    "measured_pack": "A",
+    "formula_reported": "adc * 5.0 / 1023 * 118 / 18",
+    "nominal_adc_reference_v": 5,
+    "divider_ratio_reported": 6.555555555555555,
+    "nominal_full_scale_pack_v_computed": 32.77777777777778,
+    "physical_resistor_values_ohm": null,
+    "physical_reference_v": null,
+    "pack_max_charge_v": null,
+    "protection_verified": false,
+    "filter_capacitor_c3_removed_reported": true,
+    "thresholds": null,
+    "not_battery_soc_estimation": true
+  },
+  "critical_pending_checks": [
+    "제작 PCB revision·원본 KiCad/netlist·harness pin1 확인",
+    "M1/M3 motor-encoder pairing 및 A/B 묶음 확인",
+    "실제 Arduino firmware source/hash/upload 기록 확인",
+    "XT60 각인·pad·전원 극성 및 외부 fuse/BMS/E-Stop 회로 확인",
+    "CN1 NC와 PCB-A J11 GND를 구분하고 공통 GND 경로 확인",
+    "relay module active level·pullup·부하 및 U1 COM 처리 검토",
+    "A3 divider·reference·최대 충전전압·noise·보호 확인",
+    "Serial1/2/3 및 I2C/Timer1/5 겸용 충돌 확인",
+    "count/rev·wheel sign·footprint·sensor TF·속도·정지거리 재검증",
+    "single serial gateway·async FAULT/EVENT parser·E-Stop latch·real odom/TF 구현",
+    "MC-40a 장착 옵션·합산 부하 및 돌입/stall 전류별 DC 차단 적합성·차단 분기·suppression·보호된 상태 feedback 확인",
+    "보고된 주 배터리 완충 29.4V·MDD10A revision·회생/과도 전압·BMS/보호 확인",
+    "보조 배터리 최대 충전전압과 코일 단자 전압·제어 전원 소실 동작 확인. SOC 85%를 코일 전압 보증으로 사용하지 않음",
+    "MC-40a 주단자에 이미지의 12AWG ferrule 조합이 허용되는지 단자/lug/부하별 제조사 확인",
+    "Arduino 유지전원 상태에서 비상정지 latch·대기 주행 명령 폐기·수동 재개 전까지 재출발 금지 검증",
+    "비상정지 해제/전원 복구 시 잔류 명령 차단·수동 재허용·정지거리 검증"
+  ],
+  "measurements_updated": false,
+  "reported_text_ambiguities": [
+    {
+      "issue": "D2->D20 요약은 핀 집합의 차이이며 배열 한 요소만 치환하라는 의미가 아닙니다.",
+      "per_index_encoder_a_change": [[2, 3], [3, 18], [18, 19], [19, 20]],
+      "source_pdf_pages": [3, 4]
+    },
+    {
+      "issue": "PDF Mega J7의 /*52는 공식 Mega PWM 지원 범위와 다릅니다. 원본 net 별표 의미를 확인해야 합니다.",
+      "normalized_pin": "D52",
+      "official_alternate_function": "SPI SCK",
+      "pwm_capability": false,
+      "source_pdf_pages": [1, 3]
+    }
+  ],
+  "official_references": [
+    "https://docs.arduino.cc/resources/pinouts/A000067-full-pinout.pdf",
+    "https://store.arduino.cc/products/arduino-mega-2560-rev3",
+    "https://www.ti.com/lit/ds/symlink/uln2003a.pdf",
+    "https://www.cytron.io/cytron/p-10amp-5v-30v-dc-motor-driver-2-channels"
+  ]
+}

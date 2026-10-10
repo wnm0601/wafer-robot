@@ -1,0 +1,11 @@
+{
+  "scope": "같은 화면의 PC 모의/실차 수동 COM 제어 전환, 실차 encoder/출력 표시, 실차 위치 미추정 명시, 실측 비교 기록",
+  "platform": "Windows Python 3.13 tkinter + pyserial; 모의 모드만 WSL g++ 필요. 검증은 PC fixture로 수행하고 실제 장치는 열지 않음",
+  "entrypoint": "py -3.13 scripts\\manual_first_drive.py; 실차: --real --port COM7 --no-power-feedback",
+  "visualDirection": "큰 부스 지도와 오른쪽 수동 조작 패널, 하단 좌표·바퀴·상태. 기존 뒤쪽 벽/테이블 배치. 파란 출발, 빨간 목적지, 청록 대차, 황토색 궤적. Malgun Gothic.",
+  "targets": ["1120x720", "940x720"],
+  "scenarios": ["M1~M4 개별 선택과 위/아래 홀드", "4륜 W/S/A/D/Q/E 홀드", "C++ 가감속 출력으로 위치 적분", "키/버튼 해제 STOP", "창 포커스 이탈 STOP", "명시적 수동 준비 후에만 ARM", "오류·비상정지 잠금", "지도 클릭 지점 변경/충돌 지점 거절", "정지 중 속도 슬라이더/숫자 변경·저장", "테이블 충돌 정지", "실제 COM 포트 옵션 거절"],
+  "fixtures": "기존 booth_mock.json와 CAD 참고 footprint, 명시적 가상 운동 모델, PC에서 빌드한 실제 cart_controller.cpp; 실측으로 승격하지 않음",
+  "baseline": null,
+  "limitations": ["기본 빌드 잠금 유지; 별도 MANUAL_UNMONITORED 빌드는 A8 없이 40% 상한, 전원 상태는 unknown으로 표시", "실차 명령은 명시적 연결 확인 및 수동 준비 후 홀드만 허용; 전원 복구 감지는 불가하므로 복구 전 키 해제·앱 종료, 복구 후 재연결", "실제 바퀴 매핑 미검증으로 4륜 주행 잠금", "토크·질량·마찰·제동거리 미교정", "실제 SLAM/Nav2 자동주행과 카메라 안전 제어는 미연결", "실차 UI의 현재 시각·모달 동작 검증은 보류"]
+}
