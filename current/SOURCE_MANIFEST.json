@@ -1,0 +1,321 @@
+{
+  "date": "2026-10-15",
+  "description": "원래 작업 루트 상대 경로와 current/ 배포 파일 비교. 변경 허용: 4개 CMD와 카메라 테스트. 가중치/원시 데이터 제외.",
+  "files": [
+    {
+      "path": "cart-manual-ui/app.py",
+      "source_sha256": "5259340BD270657221876B14D7BE7B87858E630962DB9D3F564F14B8116F1B5F",
+      "bundle_sha256": "5259340BD270657221876B14D7BE7B87858E630962DB9D3F564F14B8116F1B5F",
+      "identical": true,
+      "bytes": 43542
+    },
+    {
+      "path": "cart-manual-ui/design-contract.json",
+      "source_sha256": "3F7FF1A50AD34A80499CC0553ADD535F4E211AD1A517D7AE1A5970B7F70E0981",
+      "bundle_sha256": "3F7FF1A50AD34A80499CC0553ADD535F4E211AD1A517D7AE1A5970B7F70E0981",
+      "identical": true,
+      "bytes": 3472
+    },
+    {
+      "path": "cart-manual-ui/driver_adapter.py",
+      "source_sha256": "AA6C2FAE299025609A4E1923C45F08006A1AA0A00F62E6E9850AFB4E24029689",
+      "bundle_sha256": "AA6C2FAE299025609A4E1923C45F08006A1AA0A00F62E6E9850AFB4E24029689",
+      "identical": true,
+      "bytes": 10328
+    },
+    {
+      "path": "cart-manual-ui/README.md",
+      "source_sha256": "93979F43BB742FE8A6BBAA707D40F1E080B30AC5982948E05B490D4DA655E883",
+      "bundle_sha256": "93979F43BB742FE8A6BBAA707D40F1E080B30AC5982948E05B490D4DA655E883",
+      "identical": true,
+      "bytes": 19195
+    },
+    {
+      "path": "cart-manual-ui/route_editor.py",
+      "source_sha256": "BAC57AF6B25644088AB7C6558A9F71E2840728ABAFE65383E91FA10412EBFA8C",
+      "bundle_sha256": "BAC57AF6B25644088AB7C6558A9F71E2840728ABAFE65383E91FA10412EBFA8C",
+      "identical": true,
+      "bytes": 8167
+    },
+    {
+      "path": "cart-manual-ui/screen_recording.py",
+      "source_sha256": "15654E2B6FE2D137C7411AA8BC0862111B3C6A21412C2A6AE077F2CDC763EB1C",
+      "bundle_sha256": "15654E2B6FE2D137C7411AA8BC0862111B3C6A21412C2A6AE077F2CDC763EB1C",
+      "identical": true,
+      "bytes": 4114
+    },
+    {
+      "path": "cart-manual-ui/start-timed-ui.cmd",
+      "source_sha256": "D7295F550476FF16ADE69E9AAD63BF292A65CDCDC838F9E56C6D963621AC6FF1",
+      "bundle_sha256": "4B59CE03BB9BC633ED1D1D81DC47C00196FB869FD552158196076A1E60FC3056",
+      "identical": false,
+      "bytes": 67
+    },
+    {
+      "path": "cart-manual-ui/start-ui.cmd",
+      "source_sha256": "1C154CAFDE5A457628EED668CD414D08B2DBD5B48E741192309F916A975766E6",
+      "bundle_sha256": "EE3D42CC8FD62717F3B6159523DBC3E386D6EBD9AB33B79C7864303FA4E42845",
+      "identical": false,
+      "bytes": 67
+    },
+    {
+      "path": "cart-manual-ui/test_adapter.py",
+      "source_sha256": "97EFD646026FF3F5762CB9D4C764F0D61E8552E71187B493F39AABA8561D02B7",
+      "bundle_sha256": "97EFD646026FF3F5762CB9D4C764F0D61E8552E71187B493F39AABA8561D02B7",
+      "identical": true,
+      "bytes": 5950
+    },
+    {
+      "path": "cart-manual-ui/test_timed_drive.py",
+      "source_sha256": "E544E2DB98A8098E5C5B2CE68B069368D8D37E17C74BC2EC238B8D5B4C98DCAD",
+      "bundle_sha256": "E544E2DB98A8098E5C5B2CE68B069368D8D37E17C74BC2EC238B8D5B4C98DCAD",
+      "identical": true,
+      "bytes": 34590
+    },
+    {
+      "path": "cart-manual-ui/test_travel_log.py",
+      "source_sha256": "C24711532A8AB6FDC469D73AE62AACAA3DF8E597B349BA6E5FB33682D1AE29B8",
+      "bundle_sha256": "C24711532A8AB6FDC469D73AE62AACAA3DF8E597B349BA6E5FB33682D1AE29B8",
+      "identical": true,
+      "bytes": 15699
+    },
+    {
+      "path": "cart-manual-ui/timed_app.py",
+      "source_sha256": "EFEDADAD178F72FE638EBA8A354D3A479791C48D5841A85E42BDBA1B58D71AD7",
+      "bundle_sha256": "EFEDADAD178F72FE638EBA8A354D3A479791C48D5841A85E42BDBA1B58D71AD7",
+      "identical": true,
+      "bytes": 23635
+    },
+    {
+      "path": "cart-manual-ui/timed_drive.py",
+      "source_sha256": "484FC9C35AEED7F948205C7106303220264046CD2E040235EAD1B2B252BF50C7",
+      "bundle_sha256": "484FC9C35AEED7F948205C7106303220264046CD2E040235EAD1B2B252BF50C7",
+      "identical": true,
+      "bytes": 24208
+    },
+    {
+      "path": "cart-manual-ui/timed-design-contract.json",
+      "source_sha256": "6077713A63EFA3B135601EC83C634578EAE5ADE6EFE8C2F3ABD9890AB049372F",
+      "bundle_sha256": "6077713A63EFA3B135601EC83C634578EAE5ADE6EFE8C2F3ABD9890AB049372F",
+      "identical": true,
+      "bytes": 2122
+    },
+    {
+      "path": "cart-manual-ui/timed-settings.json",
+      "source_sha256": "7C24B5E1D8726A04D18335E61F6B498854BAB75EAEB677574946D0F0C6FD9C8C",
+      "bundle_sha256": "7C24B5E1D8726A04D18335E61F6B498854BAB75EAEB677574946D0F0C6FD9C8C",
+      "identical": true,
+      "bytes": 50
+    },
+    {
+      "path": "cart-manual-ui/travel_log.py",
+      "source_sha256": "BEB03CEDB92AF0DDDCB37E6EFCF843C543E4470A7C6D1734C69BBD0C1A8A6B39",
+      "bundle_sha256": "BEB03CEDB92AF0DDDCB37E6EFCF843C543E4470A7C6D1734C69BBD0C1A8A6B39",
+      "identical": true,
+      "bytes": 8320
+    },
+    {
+      "path": "cart-manual-ui/assets/cart-final.png",
+      "source_sha256": "EFB8EC12CCB32D1DDD650FDC82AE798F445BF3A19FCAE05E2D9E3A82775EB734",
+      "bundle_sha256": "EFB8EC12CCB32D1DDD650FDC82AE798F445BF3A19FCAE05E2D9E3A82775EB734",
+      "identical": true,
+      "bytes": 395681
+    },
+    {
+      "path": "cart-sensor-check/app.py",
+      "source_sha256": "033713BBFB970154D7B16007CD69B8403AF6B778C89F1D93BBED1D0185A91A53",
+      "bundle_sha256": "033713BBFB970154D7B16007CD69B8403AF6B778C89F1D93BBED1D0185A91A53",
+      "identical": true,
+      "bytes": 24772
+    },
+    {
+      "path": "cart-sensor-check/design-contract.json",
+      "source_sha256": "7E1EC579668E79F32CE34FE9D59A6328D43AD44B18DE2C58E4B918C5D1C82EB3",
+      "bundle_sha256": "7E1EC579668E79F32CE34FE9D59A6328D43AD44B18DE2C58E4B918C5D1C82EB3",
+      "identical": true,
+      "bytes": 1156
+    },
+    {
+      "path": "cart-sensor-check/README.md",
+      "source_sha256": "E81283C79C606F53EEE5DB9AC437D625B3EB72E45816D64F9BC8FEE7D2107E6D",
+      "bundle_sha256": "E81283C79C606F53EEE5DB9AC437D625B3EB72E45816D64F9BC8FEE7D2107E6D",
+      "identical": true,
+      "bytes": 4544
+    },
+    {
+      "path": "cart-sensor-check/start.cmd",
+      "source_sha256": "F68E7584D432A4F881E60BA1FB74869938768219AC8049079937D4032EBE3564",
+      "bundle_sha256": "22750CD6363A24046A2FB835D9150247011676BE678C463B8AE9AF00D7A3C6B1",
+      "identical": false,
+      "bytes": 69
+    },
+    {
+      "path": "cart-sensor-check/test_app.py",
+      "source_sha256": "0A74FB9056FCD8DA6A0D8DD1A08666FB5FE6214F0FFD477E8E1B4EBF9768FBCC",
+      "bundle_sha256": "0A74FB9056FCD8DA6A0D8DD1A08666FB5FE6214F0FFD477E8E1B4EBF9768FBCC",
+      "identical": true,
+      "bytes": 5940
+    },
+    {
+      "path": "cart-target-preview/design-contract.json",
+      "source_sha256": "DC52C8B11CDA01DF5303FF98F4273B6CE08B29E50B99F93E531C2C20AC595566",
+      "bundle_sha256": "DC52C8B11CDA01DF5303FF98F4273B6CE08B29E50B99F93E531C2C20AC595566",
+      "identical": true,
+      "bytes": 1123
+    },
+    {
+      "path": "cart-target-preview/preview.py",
+      "source_sha256": "AFFA454BBF99E429A0A47FA70990475359DC83F62FF626D333114EA224E254DF",
+      "bundle_sha256": "AFFA454BBF99E429A0A47FA70990475359DC83F62FF626D333114EA224E254DF",
+      "identical": true,
+      "bytes": 25012
+    },
+    {
+      "path": "cart-target-preview/README.md",
+      "source_sha256": "705FDC30D8A513F45DD78C6CE181FABEE7DC128A157E3C6251ACB520923814DC",
+      "bundle_sha256": "705FDC30D8A513F45DD78C6CE181FABEE7DC128A157E3C6251ACB520923814DC",
+      "identical": true,
+      "bytes": 11202
+    },
+    {
+      "path": "cart-target-preview/start-preview.cmd",
+      "source_sha256": "98C7D296F9FACE21152494682375E0BF3D1052EBCBB4A26F1F7B59D5A0E3E3E6",
+      "bundle_sha256": "3D086F976C02F57B3CB3A5A640F1EE195F1DB94DFE1382F656B329E2C7BA648A",
+      "identical": false,
+      "bytes": 68
+    },
+    {
+      "path": "cart-target-preview/target_core.py",
+      "source_sha256": "AC6B5F723FCB55BBD6E86A71AEE1657FD76718A1D63DDB728829E3CDD933F6FC",
+      "bundle_sha256": "AC6B5F723FCB55BBD6E86A71AEE1657FD76718A1D63DDB728829E3CDD933F6FC",
+      "identical": true,
+      "bytes": 5525
+    },
+    {
+      "path": "cart-target-preview/test_preview.py",
+      "source_sha256": "DDEC49EC8DD74987BA353DD08E57D4516245DE43F6BED83D40556FCF86876A76",
+      "bundle_sha256": "6F3352F86C7FC22C611BF0B0238354D03E3E54043174996AFCD7F87D53EB3AAE",
+      "identical": false,
+      "bytes": 16009
+    },
+    {
+      "path": "gray-panel-training/README.md",
+      "source_sha256": "CB756734E0BEB495219F93E5770EE8913EF51F304A2D07E3BD6BAAE2A9FA6F10",
+      "bundle_sha256": "CB756734E0BEB495219F93E5770EE8913EF51F304A2D07E3BD6BAAE2A9FA6F10",
+      "identical": true,
+      "bytes": 6341
+    },
+    {
+      "path": "gray-panel-training/test_training.py",
+      "source_sha256": "A4F7D49985277DBFB05F737231C19C2C4F21CCB81976731634637B53B3E67435",
+      "bundle_sha256": "A4F7D49985277DBFB05F737231C19C2C4F21CCB81976731634637B53B3E67435",
+      "identical": true,
+      "bytes": 6514
+    },
+    {
+      "path": "gray-panel-training/train_gray_panel.py",
+      "source_sha256": "94EFE31BC32534D34CB2DF945482EDF566A3B9A8D26DD2A2943231281288BA70",
+      "bundle_sha256": "94EFE31BC32534D34CB2DF945482EDF566A3B9A8D26DD2A2943231281288BA70",
+      "identical": true,
+      "bytes": 8984
+    },
+    {
+      "path": "ROBOT-motor-review-928b2a8/common/color.py",
+      "source_sha256": "8B3A0CA92BF38ED96979200856E0B479BED77CBFC513CFB4DCE26F65D253427F",
+      "bundle_sha256": "8B3A0CA92BF38ED96979200856E0B479BED77CBFC513CFB4DCE26F65D253427F",
+      "identical": true,
+      "bytes": 3361
+    },
+    {
+      "path": "ROBOT-motor-review-928b2a8/common/manual_motor_test.py",
+      "source_sha256": "66F3E3A32E5965FB09B086869F5C41C495DB0148EE8635C0BCCD40FD0FAE1632",
+      "bundle_sha256": "66F3E3A32E5965FB09B086869F5C41C495DB0148EE8635C0BCCD40FD0FAE1632",
+      "identical": true,
+      "bytes": 13693
+    },
+    {
+      "path": "ROBOT-motor-review-928b2a8/common/mecanum.py",
+      "source_sha256": "8BC75CA142CD3A7565C4624A2CC13E4B9BC573A14805CA7D426372141EFADF22",
+      "bundle_sha256": "8BC75CA142CD3A7565C4624A2CC13E4B9BC573A14805CA7D426372141EFADF22",
+      "identical": true,
+      "bytes": 1184
+    },
+    {
+      "path": "ROBOT-motor-review-928b2a8/docs/MOTOR_REVIEW_20261012.md",
+      "source_sha256": "D27DB546897A3A09AE99B68EF1C2E93ABB8ECF7F6C6CF3B0CEF9FF19BC2664ED",
+      "bundle_sha256": "D27DB546897A3A09AE99B68EF1C2E93ABB8ECF7F6C6CF3B0CEF9FF19BC2664ED",
+      "identical": true,
+      "bytes": 11223
+    },
+    {
+      "path": "ROBOT-motor-review-928b2a8/tests/mecanum_drive_test.py",
+      "source_sha256": "7A680062D71E41ED356FE25B2AEE7D178E98B650D9884E10BC1A898885C036ED",
+      "bundle_sha256": "7A680062D71E41ED356FE25B2AEE7D178E98B650D9884E10BC1A898885C036ED",
+      "identical": true,
+      "bytes": 549
+    },
+    {
+      "path": "ROBOT-motor-review-928b2a8/tests/mecanum_pair_test.py",
+      "source_sha256": "452DE016CEBF133E0B1196EECEA34E2543E68399059C80A1DC0E7FB1BA296CDA",
+      "bundle_sha256": "452DE016CEBF133E0B1196EECEA34E2543E68399059C80A1DC0E7FB1BA296CDA",
+      "identical": true,
+      "bytes": 552
+    },
+    {
+      "path": "ROBOT-motor-review-928b2a8/tests/motor_single_test.py",
+      "source_sha256": "5791620799CCCA85ECBEB76D1477E4F1F27A849A769B730323EC93C9DBC15ECC",
+      "bundle_sha256": "5791620799CCCA85ECBEB76D1477E4F1F27A849A769B730323EC93C9DBC15ECC",
+      "identical": true,
+      "bytes": 533
+    },
+    {
+      "path": "ROBOT-motor-review-928b2a8/tests/test_manual_motor_safety.py",
+      "source_sha256": "BC3D8AF0F35400458EECF3C560E3F34CC859E51A526C06B5973AA172CC529973",
+      "bundle_sha256": "BC3D8AF0F35400458EECF3C560E3F34CC859E51A526C06B5973AA172CC529973",
+      "identical": true,
+      "bytes": 7130
+    },
+    {
+      "path": "ROBOT-motor-review-928b2a8/tests/test_mecanum.py",
+      "source_sha256": "8D9F19AC1A3220728007E10A6D73F459113F73039A70C9E2FB4D49E0AC645D4B",
+      "bundle_sha256": "8D9F19AC1A3220728007E10A6D73F459113F73039A70C9E2FB4D49E0AC645D4B",
+      "identical": true,
+      "bytes": 1306
+    },
+    {
+      "path": "ROBOT-motor-review-928b2a8/tests/firmware_host/Arduino.h",
+      "source_sha256": "F81AA743ABDB4FACDA5F02E333A177FEA9DB77C17338D1DAA8ABB6001900B79F",
+      "bundle_sha256": "F81AA743ABDB4FACDA5F02E333A177FEA9DB77C17338D1DAA8ABB6001900B79F",
+      "identical": true,
+      "bytes": 2298
+    },
+    {
+      "path": "ROBOT-motor-review-928b2a8/tests/firmware_host/test_motor.cpp",
+      "source_sha256": "BB2C50D46DD6C0C5CFABEF5DF048207D2EDC4F70B887AB7298EE896EF9E05678",
+      "bundle_sha256": "BB2C50D46DD6C0C5CFABEF5DF048207D2EDC4F70B887AB7298EE896EF9E05678",
+      "identical": true,
+      "bytes": 3601
+    },
+    {
+      "path": "ROBOT-motor-review-928b2a8/tests/firmware_host/util/atomic.h",
+      "source_sha256": "BEB85790CB6C2A008B0ADAD666E1676B8C85E171D9078CD9EDF31C6AC84116C7",
+      "bundle_sha256": "BEB85790CB6C2A008B0ADAD666E1676B8C85E171D9078CD9EDF31C6AC84116C7",
+      "identical": true,
+      "bytes": 207
+    },
+    {
+      "path": "ROBOT-motor-review-928b2a8/urt/mecanum_motor/platformio.ini",
+      "source_sha256": "7C471B3DA7D3F089667FA1A4D28BE075C1E3B3B587B88E5258933B3BBAE968F7",
+      "bundle_sha256": "7C471B3DA7D3F089667FA1A4D28BE075C1E3B3B587B88E5258933B3BBAE968F7",
+      "identical": true,
+      "bytes": 715
+    },
+    {
+      "path": "ROBOT-motor-review-928b2a8/urt/mecanum_motor/src/main.cpp",
+      "source_sha256": "6C95886A741D153604B23B092C5A1DFBA6D75294FA6BA2F2B7FEF690B3DA175C",
+      "bundle_sha256": "6C95886A741D153604B23B092C5A1DFBA6D75294FA6BA2F2B7FEF690B3DA175C",
+      "identical": true,
+      "bytes": 26163
+    }
+  ]
+}

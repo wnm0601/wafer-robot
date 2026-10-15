@@ -1,0 +1,5 @@
+-r requirements-ui.txt
+ultralytics==8.4.90
+# CPU/GPU wheel selection must match the target PC. The reference PC used CUDA 13.0 wheels.
+torch==2.11.0
+torchvision==0.26.0

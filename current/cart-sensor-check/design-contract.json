@@ -1,0 +1,12 @@
+{
+  "scope": "카메라와 LiDAR를 함께 시작하는 별도 무구동 점검 창. 자동 표적-거리 대응 및 주행은 제외",
+  "platform": "Windows / Python 3.13 / Tkinter / OpenCV / Pillow / pyserial",
+  "entry": "start.cmd",
+  "visualDirection": "기존 대차 밝은 회색 UI, 청색 글자, 좌측 영상과 우측 어두운 레이더, 노랑 측정구간, 큰 거리와 변화 그래프",
+  "targets": ["1280x820", "1060x740"],
+  "scenarios": ["시작/종료/재시작", "YOLO 표적 선택", "측정점 클릭 및 구간 입력", "기준 대비 변화", "상실/혼합/오래된 데이터", "CSV 저장", "모의 모드는 장치 미연결"],
+  "fixtures": "합성 YDLIDAR XOR 패킷, 52cm 표면과 160cm 배경, 모의 red_box",
+  "baseline": null,
+  "protected": ["기존 펌웨어", "기존 모터 Python", "cart-manual-ui", "cart-target-preview"],
+  "limitations": "고정 각도·거리 범위 수동 선택. 같은 구간에 들어온 다른 물체는 구별하지 못함. raw 방위/센서 거리이며 절대 정확도·동일 표적 미검증. 카메라-LiDAR 외부 보정 전. 거리 표시와 모터 제어 연결 없음."
+}

@@ -1,0 +1,12 @@
+{
+  "scope": "기존 모터 코드 변경 없이 별도 영상 전용 중앙 맞춤 도구. 기본은 기존 6종 YOLO 모델, 박스별 신뢰도/수평 오차 표시",
+  "platform": "Windows Python 3.13 / Tkinter / OpenCV / Pillow",
+  "entry": "start-preview.cmd",
+  "visualDirection": "기존 대차 UI의 밝은 회색과 청색 글자; 큰 영상, 고정된 무구동 경고, 오차와 인식 상태",
+  "targets": ["1280x900", "1120x820", "960x720", "F11 전체 화면"],
+  "scenarios": ["연결 전", "색상 클릭", "YOLO 박스 선택", "좌/우 오차", "중앙 안정", "상실/복수/오래된 영상", "종료/재시작", "목표 X 변경"],
+  "fixtures": "합성 단색 사각형, 실제 카메라와 구분된 모의 영상, Full HD 합성 프레임 클릭 좌표",
+  "capture": "Full HD 1920x1080 MJPG 30fps 요청 기본값; 실제 수신 프레임 크기 표시. HD/VGA 선택. 비율 유지·자르기 없음. 광학 시야 확대 보장 없음.",
+  "baseline": null,
+  "forbidden": ["모터 명령", "COM 연결", "기존 모터 및 주행 UI 파일 변경", "영상의 물리 거리 환산 주장"]
+}

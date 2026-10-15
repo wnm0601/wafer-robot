@@ -1,0 +1,5 @@
+# Windows Python 3.13 / 2026-10-15 installed versions, no hardware access on install
+pyserial==3.5
+numpy==2.5.0
+opencv-python==4.13.0.92
+Pillow==12.2.0

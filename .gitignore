@@ -10,3 +10,16 @@ data/output/*
 !data/output/.gitkeep
 data/manual_simulation_ui.json
 *.zip
+# Current operational bundle: keep private recordings, datasets and model weights local.
+current/**/logs/
+current/**/recordings/
+current/**/backups/
+current/**/runs/
+current/**/dataset/
+current/**/data/motor_logs/
+current/**/tmp*/
+current/**/*.pt
+current/**/*.onnx
+current/**/*.log
+current/**/cad-source*/
+current/**/test-results/
